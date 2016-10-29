@@ -33,4 +33,7 @@ Source can compiled with make and make install with the supplied Makefile. There
 ```
   $ make && make -n prefix=/usr/local install
 ```
-    
+(remove the -n to actually install to your favorite prefix)
+
+Sample ebuild for gentoo is at https://raw.githubusercontent.com/asssaf/sysrq-alt/master/contrib/sysrq-alt-0.1.ebuild
+
