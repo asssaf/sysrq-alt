@@ -8,6 +8,11 @@ Using the EVIOCSKEYCODE an alternative key's scancode can be assigned to the Sys
 
 Once this command is executed (probably in startup scripts) the Magic SysRq facility can be used with the alternative combination (I like using the left command button as SysRq, and so alt+left cmd+h to activate magic SysRq). This way I can still use the left cmd key for other uses in X by assigning global shortcuts to it in my window manager (e.g. for cut&paste).
 
+BTW, this is essentially equivalent to (the more general) [keyfuzz](http://0pointer.de/lennart/projects/keyfuzz). keyfuzz can map other keys while this one can only map the SysRq key. With keyfuzz you'd do something like:
+```
+  $ echo "458979 99" | keyfuzz -s -d device 
+```
+
 ## Usage
 ```
 Usage: sysrq -d device -s scancode
